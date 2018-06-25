@@ -4,9 +4,9 @@ Projeto Final do Curso de Extensão S2B- Students to Business -Trilha de Desenvo
 
 ## Alunos
 
--- Ernesto Junior Silva Ribarr
+- Ernesto Junior Silva Ribarr
 
--- Felipe Martins da Silva
+- Felipe Martins da Silva
 
 ## Pré-requisitos
 
