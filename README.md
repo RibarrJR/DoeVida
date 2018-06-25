@@ -36,10 +36,9 @@ Para utilizar nossa API siga os seguintes passos.
 
 Na pasta /API 
 - Utilize o comando para instalar as dependências do node
-```
+``
 npm install 
-
-```
+``
 
 Para Iniciar a API 
 - Digite o comando 
@@ -50,7 +49,6 @@ node app.js
 Para iniciar a API na porta 8000 
 
 - Acesse a api digitando na barra de endereço do browser
-
 ``
 localhost:8000
 ``
