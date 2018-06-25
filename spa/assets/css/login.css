@@ -1,0 +1,73 @@
+body{
+  color:#FFFFFF;
+}
+
+.addHover{
+  pointer-events: all;
+}
+.rmvHover{
+  pointer-events: none;
+}
+.btn-login{
+  margin:30px 10px 0px 0px ;
+  transition:0.3s;
+  border-radius:0.5em;
+  width:5.8em;
+  height:2.5em;
+  background:white;
+  padding:0.3em;
+/*            borda interna*/
+  border:0.2em solid #921F1C;
+/*            borda externa*/
+  box-shadow: 0px 0px 0px 4px white;
+}
+
+.btn-login:hover{
+  background:rgba(0,0,0,0.0);
+  color:white; 
+}
+
+.card{
+ background:rgba(0,0,0,0);
+ border:none;
+ box-shadow:0px 0px 0px #FFFFFF;   
+}
+
+label{
+  transition:0.3s;
+}
+
+.brand{
+  padding:150px;
+}
+
+.lg-section-right{
+  padding:0;
+  background:#921F1C;
+  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.3));
+}
+
+.lg-section-left{
+  padding:0;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(../img/sangue.jpg);
+  background-repeat: no-repeat;
+}
+
+.footer{
+  background:#921F1C;
+  color:#FFFFFF;
+  width: 100%;
+}
+
+/* FIM login input*/
+@media (max-width: 1180px) {
+  .lg-section-left{
+    display:none;
+  }
+
+}

@@ -1,0 +1,68 @@
+<%- include ../head.html %>
+<%- include ../navbar.html %>
+
+<div class="container mt-5" >
+    <div class="bs-component">
+
+        <div class="jumbotron">
+            <h1 class="display-3">Cad. Necessidades dos Bancos</h1>
+
+            <hr class="my-4">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 actions">
+                                       
+                    <form method="post" action="/necessidade-registrada">
+                        <label for="bank" >Banco ID: </label>
+                        <input type="text" name="bank" value="<%= id %>" />
+
+                        <label for="APositive" >A Positivo: </label>
+                        <input type="text" name="APositive" />
+
+                        <label for="ANegative" >A Negativo: </label>
+                        <input type="text" name="ANegative" />
+
+                        <label for="BPositive" >B Positivo: </label>
+                        <input type="text" name="BPositive" />
+
+                        <label for="BNegative" >B Negativo: </label>
+                        <input type="text" name="BNegative" />
+
+                        <label for="ABPositive" >AB Positivo: </label>
+                        <input type="text" name="ABPositive" />
+
+                        <label for="ABNegative" >AB Negativo: </label>
+                        <input type="text" name="ABNegative" />
+
+                        <label for="OPositive" >O Positivo: </label>
+                        <input type="text" name="OPositive" />
+
+                        <label for="ONegative" >O Negativo: </label>
+                        <input type="text" name="ONegative" />
+                    
+                        <button type="submit" name"submit">Cadastrar</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+    label,
+    input{
+        display: block;
+        margin: 5px;
+    }
+    button{
+        display: block;
+        margin: 20px 0px 0px 5px;
+    }
+</style>
+
+<%- include ../footer.html %>

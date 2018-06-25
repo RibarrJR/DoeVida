@@ -1,0 +1,60 @@
+<%- include ../head.html %>
+<%- include ../navbar.html %>
+
+<div class="container mt-5" >
+    <div class="bs-component">
+
+        <div class="jumbotron">
+            <h1 class="display-3">Cadastro de Banco de Sangue</h1>
+
+            <hr class="my-4">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 actions">
+                    
+                    <form method="post" action="/banco-registrado">
+                        <label for="name" >Nome: </label>
+                        <input type="text" name="name" />
+                    
+                        <label for="description" >Descrição: </label>
+                        <input type="text" name="description" />
+                    
+                        <label for="password">Senha: </label>
+                        <input type="password" name="password">
+                    
+                        <label for"email">Email: </label>
+                        <input type="email" name="email"/>
+                    
+                        <label for="address">Endereço: </label>
+                        <input type="text" name="address" />
+                    
+                        <label for="telephone">Telefones: </label>
+                        <input type="text" name="telephone" />
+                    
+                        <button type="submit" name"submit">Cadastrar</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+    label,
+    input,
+    select{
+        display: block;
+        margin: 5px;
+    }
+    button{
+        display: block;
+        margin: 20px 0px 0px 5px;
+    }
+</style>
+
+<%- include ../footer.html %>

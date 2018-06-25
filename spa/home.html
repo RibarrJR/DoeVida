@@ -1,0 +1,56 @@
+<!-- User Home -->
+<html ng-app="home">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home - Doe Vida</title>
+<!-- Assets --> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">   
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/Logo PNG.png">
+<!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/dashbord.css">
+<!-- libs -->
+     <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+<!-- declaration APP -->
+<script src="js/app.js"></script>
+<!-- Controllers -->
+    <script src="js/controllers/home.controller.js"></script>
+    <script src="js/controllers/maps.controller.js"></script>
+<!-- Route -->
+    <script src="js/config/routeConfig.js"></script>
+    <script src="js/config/mapsConfig.js"></script>
+<!-- Services -->
+    <script src="js/services/donorService.js"></script>
+    <script src="js/services/updateDonorService.js"></script>
+<!-- Directives -->
+    <script src="js/directives/footerDirective.js"></script>
+    <script src="js/directives/dashbordDirective.js"></script>    
+<!-- maps -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+    <script src="http://rawgit.com/angular-ui/angular-google-maps/2.0.X/dist/angular-google-maps.js"></script>
+<!-- Import GoogleMaps Api-->
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDNuV8bOy_7_GiVDG1oYh95iNzoAiDiykY"></script>
+</head>
+
+<body ng-controller="homeCtrl">
+        <div class="container-fluid h-100">
+            <div class="row content">
+                <aside class="col-xl-3 menu">
+                    <dashbord class="text-white p-3"></dashbord>
+                </aside>
+                <section class="col-xl-9 bg-default">
+                    <!-- ng-route -->
+                    <ng-view class="text-default"></ng-view>
+                </section>
+            </div>
+            <div class="row footer text-center">
+                <homefooter>
+                </homefooter>
+            </div>
+        </div>        
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- Maps Template Html -->
+<div class="row p-3">
+        <div class="col-12">
+                <h3 class="text-center pt-3">Bancos de Sangue</h3>
+                <hr class=" w-50"></hr>
+        </div>
+<!-- Maps -->
+    <div class="col-lg-8 col-12 offset-lg-2 pt-3 pb-3 box-default">
+        <div id="map_canvas" class="d-flex " ng-controller="mapsControl">
+            <ui-gmap-google-map center="map.center" zoom="map.zoom" options="options">
+                <ui-gmap-markers models="map.markers" coords="'coords'" icon="'icon'" options="'options'" events="map.markersEvents">
+                    <ui-gmap-windows show="map.showWindow" closeclick="'closeClick'" > 
+                        <div ng-non-bindable class="text-dark">{{ label }}</div> 
+                    </ui-gmap-windows>
+                </ui-gmap-markers> 
+            </ui-gmap-google-map> 
+        </div> 
+    </div>
+<!-- fim Maps -->
+</div>
+
+<!-- <div id="output"/> -->
+
+

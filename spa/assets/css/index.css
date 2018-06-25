@@ -1,0 +1,97 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.S2B-text{
+    transition:0.9s;
+    color:red;
+    text-shadow:0px 0px 10px red;
+    animation-name: s2animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes s2animate {
+    0%   {color:red; text-shadow:0px 0px 10px red; }
+    25%  {color:#F1F0EE; text-shadow:0px 0px 0px white}
+    50%   {color:red;  text-shadow:0px 0px 10px red;}
+    75%  {color:#F1F0EE;  text-shadow:0px 0px 0px white}
+    100%   {color:red; text-shadow:0px 0px 10px red; }
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: #f1f0ee;
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/1.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.header .text {
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+}
+
+.header .btn {
+    transition: 0.3s;
+    margin: 60px 0;
+    padding: 10px 35px;
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, .5);
+    border-radius: 4px;
+    color: #ffffff;
+
+}
+.header .btn:hover {
+    margin: 60px 0;
+    padding: 10px 35px;
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, 0.837);
+    border-radius: 4px;
+    color: #ffffff;
+
+}
+.how-to{
+    padding: 20px 0;
+}
+.how-to .title{
+    padding-bottom: 20px;
+}
+.how-to .content {
+    font-size: 16px;
+    color: #636363;
+}
+
+.how-to .container .item .img {
+    max-width: 120px;;
+    height: 120px;;
+}
+
+section >  .title {
+    text-align:center;
+    padding: 10px 0 ;
+    font-size: 40px;
+}
+
+.team .member .name {
+    font-size: 22px;
+}
+.bordered {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.footer {
+    border-top: 1px solid #ccc;
+}
+
+.img-round{
+    width:250px;
+    height:250px;
+}

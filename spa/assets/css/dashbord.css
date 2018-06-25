@@ -1,0 +1,9 @@
+.dashbord{
+    background:#F1F0EE;
+}
+a:hover{
+    transition:0.3s;
+    color:white;
+    text-shadow:3px 3px 9px #000;
+
+}

@@ -1,0 +1,104 @@
+<%- include head.html %>
+<%- include navbar.html %>
+
+    <div class="container mt-5" >
+        <div class="bs-component">
+
+            <div class="jumbotron">
+                <h1 class="display-3">API - Doe Vida</h1>
+                <p class="lead">Aplicativo para edição e manutenção dos registros do Doe Vida.</p>
+
+                <hr class="my-4">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 actions">
+                        
+                        <ul class="lead mt-5">
+                            
+                            <H3>Doadores</H3>
+                            <li><a href="/doador-painel" class="btn btn-primary btn-lg" role="button">Painel de Doadores</a></li>
+                            
+                            <p>Funcionalidades de Doadores</p>
+                            <li><a href="/doador-cadastrar" class="btn btn-primary btn-lg" role="button">Cadastro de Doadores</a></li>
+                            <li><a href="/doador-busca" class="btn btn-primary btn-lg" role="button">Busca Doador por ID</a></li>
+                            <li><a href="/doador-login" class="btn btn-primary btn-lg" role="button">Login de Doadores</a></li>
+                            <li><a href="/doador-atualizar" class="btn btn-primary btn-lg" role="button">Atualizar de Doadores</a></li>
+                            <li><a href="/doador-deletar" class="btn btn-primary btn-lg" role="button">Deletar de Doadores</a></li>
+                            
+                            <p>Listas de Doadores</p>
+                            <li><a href="/doador-lista-json" class="btn btn-primary btn-lg" role="button">Lista de Doadores Json</a></li>
+                        
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 actions">
+                        
+                        <ul class="lead mt-5">
+                            
+                            <h3>Bancos de Sangue</h3>
+                            <li><a href="/banco-painel" class="btn btn-primary btn-lg" role="button">Painel de Bancos de Sangue</a></li>
+                            
+                            <p>Funcionalidades de Bancos</p>
+                            <li><a href="/banco-cadastrar" class="btn btn-primary btn-lg" role="button">Cadastro de Banco de Sangue</a></li>
+                            <li><a href="/banco-busca" class="btn btn-primary btn-lg" role="button">Busca Banco por ID</a></li>
+                            <li><a href="/banco-login" class="btn btn-primary btn-lg" role="button">Login de Banco de Sangue</a></li>
+                            <li><a href="/banco-atualizar" class="btn btn-primary btn-lg" role="button">Atualizar Banco</a></li>
+                            <li><a href="/banco-deletar" class="btn btn-primary btn-lg" role="button">Deletar Banco de Sangue</a></li>
+                            
+                            <p>Listas de B. de Sangue</p>
+                            <li><a href="/banco-lista-json" class="btn btn-primary btn-lg" role="button">Lista de Bancos de Sangue Json</a></li>
+                        
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 actions">
+                        <ul class="lead mt-5">
+        
+                            <h3>Necessidades</h3>
+                            <li><a href="/necessidades" class="btn btn-primary btn-lg" role="button">Cadastro de Necessidades</a></li>
+                            <li><a href="/necessidade-busca" class="btn btn-primary btn-lg" role="button">Busca Necessidades por ID</a></li>
+                            <li><a href="/necessidade-deletar" class="btn btn-primary btn-lg" role="button">Deletar Necessidades</a></li>
+                            <li><a href="/necessidade-lista-json" class="btn btn-primary btn-lg" role="button">Lista de Necessidades</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 actions">
+                        <ul class="lead mt-5">
+
+                            <h3>Emergências</h3>
+                            <li><a href="/emergencia" class="btn btn-primary btn-lg" role="button">Cadastro de Emergência</a></li>
+                            <li><a href="/emergencia-busca" class="btn btn-primary btn-lg" role="button">Busca Emergência por ID</a></li>
+                            <li><a href="/emergencia-deletar" class="btn btn-primary btn-lg" role="button">Deletar Emergência</a></li>
+                            <li><a href="/emergencia-lista-json" class="btn btn-primary btn-lg" role="button">Lista de Emergências</a></li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+<style>
+    ul{
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    
+    ul li{
+        margin:0;
+        padding:0;
+        padding-bottom:10px;
+    }
+    
+    .actions a{
+        width:100%;
+    }
+</style>
+
+<%- include footer.html %>

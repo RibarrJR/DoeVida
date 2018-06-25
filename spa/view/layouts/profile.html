@@ -1,0 +1,34 @@
+<!-- template Profile Html -->
+<div class="row p-3">
+    <div class="col-12">
+            <h3 class="text-center pt-3">Perfil do Usuário</h3>
+            <hr class="w-50"></hr>
+    </div>
+<div class="col-lg-8 col-12 offset-lg-2 box-default p-4 profile">
+    <form class=" text-center text-white" name="formProfile">
+        <div class="form-row p-3">
+            <div class="form-group col-md-6">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" ng-model="userAuth.name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" ng-model="userAuth.email">
+            </div>
+        </div>
+        <div class="form-row p-3">
+            <div class="form-group offset-lg-3 col-md-6 ">
+                <label for="password">Senha</label>
+                <input type="password" class="form-control" id="password" ng-model="userAuth.newpassword" placeholder="Nova Senha">
+            </div>
+        </div>
+        <div class="form-row p-3 ">
+            <div class="form-group   offset-lg-4 col-lg-4 ">
+                <label for="inputState">Tipo Sanguineo</label>
+                <select id="inputState" class="form-control text-white" ng-model="userAuth.selected" ng-options="typeblood for typeblood in typebloods"></select>
+            </div>
+            <div class="alert alert-success text-center w-100 " ng-show="editSuccess">Usuario editado com sucesso</div>
+        </div>
+        <button type="submit" class="btn btn-login" ng-click="edit(userAuth)">Editar</button>
+    </form>
+</div>

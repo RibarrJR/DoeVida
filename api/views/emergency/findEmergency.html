@@ -1,0 +1,44 @@
+<%- include ../head.html %>
+<%- include ../navbar.html %>
+
+<div class="container mt-5" >
+    <div class="bs-component">
+
+        <div class="jumbotron">
+            <h1 class="display-3">Busca de Emergência por ID</h1>
+
+            <hr class="my-4">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 actions">
+
+                    <form method="post" action="/emergencia-json">
+                        <label for="id" >ID: </label>
+                        <input type="text" name="id" />
+                        
+                        <button type="submit" name"submit">Buscar</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+    label,
+    input{
+        display: block;
+        margin: 5px;
+    }
+    button{
+        display: block;
+        margin: 20px 0px 0px 5px;
+    }
+</style>
+
+<%- include ../footer.html %>

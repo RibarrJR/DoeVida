@@ -1,0 +1,85 @@
+<%- include ../head.html %>
+<%- include ../navbar.html %>
+
+<div class="container mt-5" >
+    <div class="bs-component">
+
+        <div class="jumbotron">
+            <h1 class="display-3">Painel de Bancos de Sangue</h1>
+
+            <hr class="my-4">
+
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 actions table-responsive ">
+                    
+                     
+                    <table class="table table-hover">
+                            
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Email</th>
+                            <th>Endereço</th>
+                            <th>Telefone</th>
+                            <th>Atualizar</th>
+                            <th>Deletar</th>
+                            <th>Necessidades</th>
+                            <th>Emergência</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% banks.forEach(bank =>{ %>
+                            <tr>
+                                <td><%= bank.id %></td>
+                                <td><%= bank.name %></td>
+                                <td><%= bank.description %></td>
+                                <td><%= bank.email %></td>
+                                <td><%= bank.address %></td>
+                                <td><%= bank.telephone %></td>
+                                <td> 
+                                    <form method="get" action="/banco-atualizar">
+                                        <input type="hidden" name="id" value="<%= bank.id %>" />
+                                        <input type="hidden" name="name" value="<%= bank.name %>" />
+                                        <input type="hidden" name="password" value="<%= bank.password %>" />
+                                        <input type="hidden" name="email" value="<%= bank.email %>"/>
+                                        <input type="hidden" name="description" value="<%= bank.description %>"/>
+                                        <input type="hidden" name="address" value="<%= bank.address %>"/>
+                                        <input type="hidden" name="telephone" value="<%= bank.telephone %>"/>
+                                        <button type="submit">Editar</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form method="post" action="/banco-deletar-painel">
+                                        <input type="hidden" name="id" value="<%= bank.id %>" />
+                                        <button type="submit">Remover</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form method="get" action="/necessidades">
+                                        <input type="hidden" name="id" value="<%= bank.id %>" />
+                                        <button type="submit">Add</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form method="get" action="/emergencia">
+                                        <input type="hidden" name="id" value="<%= bank.id %>" />
+                                        <button type="submit">Add</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        <% })%>
+                    </tbody>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<%- include ../footer.html %>
