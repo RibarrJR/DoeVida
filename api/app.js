@@ -8,7 +8,6 @@ const path = require('path');
 
 // Packages
 const express = require('express');
-const subdomain = require('express-subdomain');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
 
@@ -157,16 +156,7 @@ async function application(){
 	 app.listen(8000, 'localhost');
 
 	 // console
-	 console.log('localhost:8000');
-	
-	// listen
-//	app.use(subdomain('api', indexRouter));
-//	app.listen(8080, 'doevida.org');
-//
-//	// console
-//	console.log('api.doevida.org:8080');
-
-	
+	 console.log('localhost:8000');	
 
 	initLog();
 }
